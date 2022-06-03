@@ -4,6 +4,6 @@ import {createJob, deleteJob, getAllJobs, updateJob, showStats } from '../contro
 
 router.route('/').post(createJob).get(getAllJobs)
 router.route('/stats').get(showStats)
-router.route('/:id').post(deleteJob).patch(updateJob)
+router.route('/:id').delete(deleteJob).patch(updateJob)
 
 export default router

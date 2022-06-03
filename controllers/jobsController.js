@@ -3,6 +3,7 @@ const createJob = async (req,res) => {
 }
 
 const deleteJob = async (req,res) => {
+    console.log('delete job')
     res.send('delete job')
 }
 
